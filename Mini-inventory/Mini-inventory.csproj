@@ -5,7 +5,6 @@
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Mini_inventory</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

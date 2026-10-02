@@ -6,6 +6,7 @@ public class Character
 {
     private int _hp;
     private string _name;
+    private Inventory Backpack;
 
     public int Hp
     {
@@ -17,5 +18,14 @@ public class Character
         }
     }
 
-    
+    public Character(string Name)
+    {
+        _name = Name;
+        _hp = 100;
+    }
+
+    public void AddToInventory(Item Input)
+    {
+        Backpack.Add(Input);
+    }
 }
