@@ -3,8 +3,12 @@
 string Name = "";
 
 Name = GetPlayerName(Name);
-
 Character Player = CreatePlayer(Name);
+Player.DisplayInventory();
+Console.ReadLine();
+
+Console.WriteLine("Du finner en hjälm på marken, plockar du upp den?");
+
 
 static string GetPlayerName(string Name)
 {
