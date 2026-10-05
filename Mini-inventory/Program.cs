@@ -1,4 +1,5 @@
-﻿using Mini_inventory;
+﻿using System.ComponentModel;
+using Mini_inventory;
 
 string Name = "";
 
@@ -6,12 +7,24 @@ Name = GetPlayerName(Name);
 Character Player = CreatePlayer(Name);
 Player.DisplayInventory();
 Console.ReadLine();
+Console.Clear();
 
 string YN = "";
+Armor StarterHelmet = new("Damaged Helmet");
 Console.WriteLine("Du finner en hjälm på marken, plockar du upp den?");
-while (YN != "y" && YN != "n") {
-Console.WriteLine("[Y/N]");
-YN = Console.ReadLine().ToLower();
+while (YN != "y" && YN != "n")
+{
+    Console.WriteLine("[Y/N]");
+    YN = Console.ReadLine().ToLower();
+}
+if (YN == "y")
+{
+    Player.AddToInventory(StarterHelmet);
+}
+else
+{
+    Console.WriteLine("Du sparkar undan hjälmen och fortsätter vidare på din resa");
+    Console.ReadLine();
 }
 
 
