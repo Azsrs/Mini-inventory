@@ -6,4 +6,8 @@ namespace Mini_inventory;
 public class Armor : Item
 {
     private float _protection;
+
+    public Armor(string Name) : base(Name)
+    {
+    }
 }

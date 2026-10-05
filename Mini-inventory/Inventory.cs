@@ -7,7 +7,7 @@ public class Inventory
 
     private List<Item> _items = [];
 
-
+   
     public List<Item> AddStuff(Item item)
     {
         _items.Add(item);

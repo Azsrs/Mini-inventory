@@ -4,6 +4,11 @@ namespace Mini_inventory;
 
 public class Item
 {
-    private string _name;
-    private float _weight;
+    protected string _name;
+    protected float _weight;
+
+    public Item(string name)
+    {
+        
+    }
 }

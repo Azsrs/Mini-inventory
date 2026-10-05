@@ -8,6 +8,10 @@ public class Consumable : Item
     private int _usesMax;
     private int _usesCurrent;
 
+    public Consumable(string Name) : base(Name)
+    {
+    }
+
     public void Use(Character Target)
     {
         if (_usesCurrent <= _usesMax)
