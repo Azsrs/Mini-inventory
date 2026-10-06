@@ -18,7 +18,7 @@ public class Inventory
     {
         foreach (Item Item in _items)
         {
-            Console.WriteLine(Item);
+            Console.WriteLine(Item.GetName());
         }
     }
 
