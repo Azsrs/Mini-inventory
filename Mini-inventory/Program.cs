@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using Mini_inventory;
+﻿using Mini_inventory;
 
 string Name = "";
 
@@ -26,8 +25,8 @@ static string GetPlayerName(string Name)
 static Character CreatePlayer(string Name)
 {
     Character Player = new(Name);
-    Weapon Twig = new("Twig");
-    Consumable HealthPotion = new("Health Potion");
+    Weapon Twig = new("Twig", 2);
+    Consumable HealthPotion = new("Health Potion", 2);
     Player.AddToInventory(Twig);
     Player.AddToInventory(HealthPotion);
     return Player;
@@ -36,7 +35,7 @@ static Character CreatePlayer(string Name)
 static Character StarterHelmetEvent(Character Player)
 {
     string YN = "";
-    Armor StarterHelmet = new("Damaged Helmet");
+    Armor StarterHelmet = new("Damaged Helmet", 20);
     Console.WriteLine("Du finner en hjälm på marken, plockar du upp den?");
     while (YN != "y" && YN != "n")
     {

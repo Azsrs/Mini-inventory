@@ -7,7 +7,7 @@ public class Armor : Item
 {
     private float _protection;
 
-    public Armor(string Name) : base(Name)
+    public Armor(string Name, int Weight) : base(Name, Weight)
     {
     }
 }

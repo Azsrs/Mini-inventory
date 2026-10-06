@@ -8,7 +8,7 @@ public class Weapon : Item
     private int _maxDamage;
 
 
-    public Weapon(string Name) : base(Name)
+    public Weapon(string Name, int Weight) : base(Name, Weight)
     {
        
     }

@@ -8,7 +8,7 @@ public class Consumable : Item
     private int _usesMax;
     private int _usesCurrent;
 
-    public Consumable(string Name) : base(Name)
+    public Consumable(string Name, int Weight) : base(Name, Weight)
     {
     }
 
