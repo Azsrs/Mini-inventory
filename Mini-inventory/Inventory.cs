@@ -16,9 +16,12 @@ public class Inventory
 
     public void Display()
     {
+        int i = 1;
+        Console.WriteLine("Nuvarande förråd:");
         foreach (Item Item in _items)
         {
-            Console.WriteLine(Item.GetName());
+            Console.WriteLine(i +". " + Item.GetName());
+            i++;
         }
     }
 

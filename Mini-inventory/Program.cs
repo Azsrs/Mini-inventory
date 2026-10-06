@@ -8,8 +8,9 @@ Character Player = CreatePlayer(Name);
 Player.DisplayInventory();
 Console.ReadLine();
 Console.Clear();
-
 Player = StarterHelmetEvent(Player);
+Player.DisplayInventory();
+Console.ReadLine();
 
 static string GetPlayerName(string Name)
 {
@@ -44,6 +45,7 @@ static Character StarterHelmetEvent(Character Player)
     }
     if (YN == "y")
     {
+        Console.WriteLine("Du plockar upp hjälmen och placerar den i ryggsäcken.\nDu fortsätter snabbt vidare på din färd");
         Player.AddToInventory(StarterHelmet);
     }
     else
@@ -51,5 +53,6 @@ static Character StarterHelmetEvent(Character Player)
         Console.WriteLine("Du sparkar undan hjälmen och fortsätter vidare på din resa");
         Console.ReadLine();
     }
+    Console.Clear();
     return Player;
 }
